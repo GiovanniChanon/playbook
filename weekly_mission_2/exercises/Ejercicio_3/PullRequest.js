@@ -1,0 +1,17 @@
+class PullRequest{
+    constructor(title,author,branchName,dateCreated,status,repositoryNameAssociated){
+        this.title = title
+        this.author = author
+        this.branchName = branchName
+        this.dateCreated = dateCreated
+        this.status = status
+        this.repositoryNameAssociated = repositoryNameAssociated
+    }
+
+    getStatus(){
+        console.log(this.status)
+      }
+    getTitleAndAuthor(){
+        console.log(`Title: ${this.title}\nAuthor: ${this.author}`)
+      }
+}
